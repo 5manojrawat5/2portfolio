@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer ></script>
+
+    <script src="https://kit.fontawesome.com/b3f809acb7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png" alt="logo image">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#services">Services</a> </li>
+                <li> <a href="#portfolio">Portfolio</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Manoj</span> <br/> Rawat From India</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="about photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit, alias nemo dolore et veniam temporibus. Similique iure aliquid aliquam commodi error ex culpa exercitationem odit molestias. Possimus beatae distinctio pariatur libero, quaerat esse officia in ea ratione quisquam sint eius maiores at consequuntur? Fuga maiores officiis odit qui rerum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick='opentab("education")'>Education</p>
+                    </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span> Lorem, ipsum. </span> <br> Designing Web/App interfaces </li>
+                        <li> <span> Web Devel Lorem, ipsum. </span> <br> Eeb app Development </li>
+                        <li> <span> App Devel Lorem, ipsum. </span> <br> Designing Web/App interfaces </li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span> some thig different. </span> <br> i have no thoughts in my mind right </li>
+                        <li> <span> don,t repeat your </span> <br> but some day it will come back </li>
+                        <li> <span> self some time it,s good but. </span> <br> jsut you have to do is wait for some time </li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span> Lorem, ipsum. </span> <br> i am writting this text for a greate good </li>
+                        <li> <span> Web Devel Lorem, ipsum. </span> <br> and i don,t know why it,s short </li>
+                        <li> <span> App Devel Lorem, ipsum. </span> <br> this is a dummy text and no matter size </li>
+                    </ul>
+                   </div>                   
+
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat placeat eius quisquam opps.</P>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat placeat eius quisquam start.</P>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat placeat eius quisquam end.</P>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="portfolio image">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eaque quae eius atque.</p>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="portfolio image">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eaque quae eius atque.</p>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="portfolio image">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eaque quae eius atque.</p>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> 5mercy5mercy5@gmail.com</p>
+                    <P> <i class="fas fa-phone-square-alt"></i>+91 9084487403</P>
+                    <div class="social-icons">
+                        <a href="#"> <i class="fab fa-facebook"></i> </a>
+                        <a href="#"> <i class="fab fa-twitter-square"></i> </a>
+                        <a href="#"> <i class="fab fa-instagram"></i> </a>
+                        <a href="#"> <i class="fab fa-linkedin"></i> </a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mrgvrykq"
+                    method="POST">
+                        <label for="Name"></label>
+                        <input type="text" name="Name" placeholder="Your Name" autocomplete="off"  minlength="3" required>
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="Your Email" autocomplete="off"  minlength="4" required>
+                        <label for="Message"></label>
+                        <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off" minlength="5" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Lorem ipsum dolor sit amet consectetur <i class="fas fa-heart"></i> adipisicing elit.</p>
+        </div>
+    </div>
+
+
+   
+</body>
+</html>
